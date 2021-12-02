@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<header class="header">
+  <h1 id="title" class="text-center">Ermitaño Expediciones Booking Form</h1>
+  <p id="description" class="description-text-center">
+    Thank you for choose our tourism company.</p>
+  </header>
+  <body>
+  <form id="survey-form">
+  <div class="form-group">
+    <label id="name-label" for="name">Name:</label>
+      <input type="text" name="name" id="name" class="form-control" placeholder="enter your name"
+     required/>
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email:</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+ placeholder="Enter your Email"
+        required/>
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number">Age<span class="clue">(optional):</span></label>
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="17"
+        max="99"
+        class="form-control"
+placeholder="age"/>
+       </div>
+    <div class="form-group">
+      <label id="nationality-label" for="nationality">Nationality:</label>
+      <input
+        type="nationality"
+        name="nationality"
+        id="nationality"
+        class="form-control"
+ placeholder="Enter your Nationality"
+        required/>
+    </div>
+       <div class="form-group">
+      <p>Gender</p>
+      <label>
+        <input
+          name="user-gender"
+          value="male"
+          type="radio"
+          class="input-radio"
+          checked
+        />Male</label
+      >
+      <label>
+        <input
+          name="user-gender"
+          value="female"
+          type="radio"
+          class="input-radio"
+        />Female</label
+      >
+
+      <label
+        ><input
+          name="user-gender"
+          value="other"
+          type="radio"
+          class="input-radio"
+        />Other</label
+      >
+    </div>
+<div class="form-group">
+      <p>What tour do I want to take?</p>
+      <select id="dropdown" name="tour" class="form-control" required>
+        <option disabled selected value>Select Tour</option>
+        <option value="student">Villarrica volcano ascent</option>
+        <option value="job">Trancura high Rafting</option>
+        <option value="learner">Trancura low Rafting</option>
+        <option value="preferNo">Cannyoning Tour</option>
+      </select>
+    </div>
+     <div class="form-group">
+      <p>
+        What day do I want to do the tour?
+      </p>
+      <select id="day-selection" name="selectday" class="form-control" required>
+        <option disabled selected value>Select a Day</option>
+        <option value="challenges">Monday</option>
+        <option value="projects">Tuesday</option>
+        <option value="community">Wednesday</option>
+        <option value="openSource">Thursday</option>
+        <option value="openSource">Friday</option>
+        <option value="openSource">Saturday</option>
+        <option value="openSource">Sunday</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <p>
+        What else do I want to include in the tour?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+      <br>
+      <label>
+        <input
+          name="prefer"
+          value="english-speaking-guide"
+          type="checkbox"
+          class="input-checkbox"
+        />English speaking guide</label>
+      </br>
+      <br>
+      <label>
+        <input
+          name="prefer"
+          value="snack-at-the-end"
+          type="checkbox"
+          class="input-checkbox"
+        />Snack at the end of the tour</label>
+      </br>
+      <br>
+      <label>
+        <input
+          name="prefer"
+          value="souvenir"
+          type="checkbox"
+          class="input-checkbox"
+        />Souvenir</label>
+      </br>
+      <br>
+      <label>
+        <input
+          name="prefer"
+          value="photographs"
+          type="checkbox"
+          class="input-checkbox"
+        />Photographs of the tour</label>
+      </br>
+    </div>  
+    <div class="form-group">
+      <p>Any comments or suggestions?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+     <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+</form>
+</body>
+</html>
